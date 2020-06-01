@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="talks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Talks</title>
+  </head>
+  <body>
+    <header>Parla con me!</header>
+    <main>
+      <div class="title">Contatti</div>
+      <div class="mail">E-mail<br>lucabison.lb@gmail.com</div>
+      <div class="number">Whatsapp<br>+39 3402148919</div>
+    </main>
+    <form class="report" action="" method="get">
+      <label for="textarea">Mandami le tue domande!</label>
+      <textarea id="textarea"></textarea>
+
+      <label for="firstname" class="firstname-label">Nome</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Il tuo nome..">
+
+      <label for="surname" class="surname-label">Cognome</label>
+      <input type="text" id="surname" name="surname" placeholder="Il tuo cognome..">
+
+      <label for="mail" class="mail-label">E-mail</label>
+      <input type="text" id="mail" name="mail" placeholder="joe@esempio.com">
+
+      <legend>Gender</legend>
+      <div class="options">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Uomo</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Donna</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Altro</label>
+      </div>
+
+      <select id="country" name="country">
+        <option value="europe">Europa</option>
+        <option value="america">America</option>
+        <option value="asia">Asia</option>
+        <option value="australia">Australia</option>
+      </select>
+
+      <input id="submit" type="submit" value="Invio">
+    </form>
+  </body>
+</html>

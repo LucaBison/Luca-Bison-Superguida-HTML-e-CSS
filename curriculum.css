@@ -1,0 +1,343 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ##################  MYCODE  ################### */
+
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.page{
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+header{
+  width: 80%;
+  padding:30px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.aboutme{
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  margin: 25px auto;
+}
+.aboutme .title{
+  width: 100%;
+  padding:10px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing:2px;
+  font-size: 16px;
+  margin-bottom:10px;
+}
+.aboutme .info{
+  width: 80%;
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  line-height: 16px;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.aboutme .contacts{
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  line-height: 16px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.timeline{
+  width: 80%;
+  padding:10px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing:2px;
+  font-size: 16px;
+}
+.timeline-img{
+  width:90%;
+  height: 100px;
+  background-image: url('images/timeline.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:20px auto;
+}
+.main-header{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-header .title{
+  width: calc(100% - 10px);
+  margin:5px;
+  padding:10px;
+  border: 3px solid #fff;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing:2px;
+  font-size: 16px;
+}
+.main-footer{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-footer .buttons, .skills{
+  width: calc(100% - 10px);
+  margin:5px;
+  padding:10px;
+  color: #fff;
+  text-align: center;
+  letter-spacing:0.5px;
+  font-size: 14px;
+}
+.buttons{
+  height: 200px;
+  background-image: url('images/skills-phone.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-footer .skills{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.problem{
+  color:#fff952
+}
+.team{
+  color:#44d9e6
+}
+.leadership{
+  color:#ff5c5c
+}
+.creativity{
+  color:#99e265
+}
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  margin: 25px auto;
+}
+footer .title{
+  width: 100%;
+  padding:10px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing:2px;
+  font-size: 16px;
+  margin-bottom:10px;
+}
+.interest{
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.videogames,
+.athletic,
+.books,
+.chemistry,
+.piano{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 5px;
+  padding:5px;
+}
+.interest img{
+  max-width: 100px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 427px) and (max-width: 600px){
+  .page{
+    margin-bottom: 40px;
+  }
+  .aboutme .info{
+    width: 50%;
+    padding-top:20px;
+    border-bottom: none;
+    border-right: 1px solid #fff;
+  }
+  .aboutme .contacts{
+      width: 50%;
+      padding-top:10px;
+  }
+  .timeline-img{
+    height: 200px;}
+  .buttons{
+    height: 150px;
+    background-image: url('images/skills.png');
+  }
+  .interest img{
+    max-width: 140px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 601px){
+  .page{
+    margin-bottom: 40px;
+  }
+  .aboutme .info{
+    width: 50%;
+    padding-top:20px;
+    border-bottom: none;
+    border-right: 1px solid #fff;
+  }
+  .aboutme .contacts{
+      width: 50%;
+      padding-top:10px;
+  }
+  .timeline-img{
+    height: 200px;}
+  .buttons{
+    height: 200px;
+    background-image: url('images/skills.png');
+  }.videogames,
+  .athletic,
+  .books,
+  .chemistry,
+  .piano{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 10px;
+    padding:15px;
+  }
+  .interest img{
+    max-width: 150px;
+    margin-top: 15px;
+  }
+}

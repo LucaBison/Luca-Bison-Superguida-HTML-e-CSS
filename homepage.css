@@ -1,0 +1,379 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ##################  MYCODE  ################### */
+
+*{
+  box-sizing: border-box;
+}
+.sidebar{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #fff952;
+  align-items: center;
+  font-size: 18px;
+}
+.logo-page{
+  margin: 0 0 0 5px;
+  padding-right: 2px;
+  font-size: 40px;
+  font-weight: 800;
+  border-right: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+.nav-header{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  line-height: 26px;
+  width: 60%;
+  justify-content: space-around;
+  text-align: center;
+}
+.flag-div{
+  display: flex;
+  flex-direction: column;
+}
+.flags{
+  margin:2px 0;
+}
+a {
+  text-decoration: none;
+  color:#111;
+  font-weight: bold;
+}
+header a:hover{
+  color: #3044B3;
+}
+.main-div{
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('images/background.png');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  width: calc(100% - 16px);
+  height:400px;
+  justify-content: center;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.main-header{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 20px auto;
+  font-size: 26px;
+  font-weight: 900;
+  font-family: 'Roboto';
+}
+.main-footer{
+  align-self: flex-end;
+  width:100%;
+  text-align: right;
+  font-family: 'Roboto';
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom:10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.gallery{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  margin: 0 auto;
+  width:calc(100% - 80px);
+  text-transform: uppercase;
+  }
+.gallery a{
+  display: block;
+  background-color: #5E75FF;
+  margin-bottom:10px;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  color:#fff;
+}
+.gallery a:hover{
+  color:#FFD95E;
+}
+.rectangle-div{
+  width: 100%;
+}
+.square-div{
+  width: 100%;
+}
+.sm-logos{
+  display: flex;
+  width: calc(100% - 10%);
+  justify-content: space-around;
+  margin: 50px auto;
+}
+footer .logo{
+  height: auto;
+
+}
+footer img{
+  width:70px;
+  height:auto;
+}
+@media only screen and (min-width: 425px) and (max-width:580px) {
+  .sidebar{
+    justify-content: space-between;
+  }
+  .logo-page{
+    margin: 0 20px 0 30px;
+  }
+  .nav-header{
+    width: 80%;
+    justify-content: space-around;
+
+  }
+  .menu{
+    flex-flow: row wrap;
+    text-align: none;
+  }
+  .flag-div{
+    flex-direction: row;
+  }
+  .flags{
+    margin: 0 5px 0 0;
+  }
+  .main-header{
+    width:30%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 10px;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Roboto';
+  }
+  .gallery{
+    width:calc(100% - 15%);
+    flex-flow: row wrap;
+  }
+  .rectangle-div{
+    width: calc(100% - 5px);
+    margin-right:5px;
+  }
+  .square-div{
+    width: calc(100% - 5px);
+    margin-right:5px;
+  }
+  .sm-logos{
+    display: flex;
+    width: calc(100% - 20%);
+    justify-content: space-around;
+    margin: 50px auto;
+  }
+}
+@media only screen and (min-width: 581px) and (max-width:945px) {
+  .sidebar{
+    justify-content: space-between;
+  }
+  .logo-page{
+    margin: 0 20px 0 30px;
+  }
+  .nav-header{
+    width: 80%;
+    justify-content: space-around;
+
+  }
+  .menu{
+    flex-flow: row wrap;
+    text-align: none;
+  }
+  .flag-div{
+    flex-direction: row;
+  }
+  .flags{
+    margin: 0 5px 0 0;
+  }
+  .main-header{
+    width:30%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 10px;
+    font-size: 26px;
+    font-weight: 900;
+  }
+  .gallery{
+    width:calc(100% - 15%);
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .rectangle-div{
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+  .square-div{
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+  .sm-logos{
+    display: flex;
+    width: calc(100% - 20%);
+    justify-content: space-around;
+    margin: 50px auto;
+  }
+}
+@media only screen and (min-width: 946px) {
+  .sidebar{
+    justify-content: space-between;
+  }
+  .logo-page{
+    margin: 0 20px 0 30px;
+  }
+  .nav-header{
+    width: 80%;
+    justify-content: space-around;
+
+  }
+  .menu{
+    flex-flow: row wrap;
+    text-align: none;
+  }
+  .flag-div{
+    flex-direction: row;
+  }
+  .flags{
+    margin: 0 10px 0 0;
+  }
+  .main-header{
+    width:30%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 10px;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Roboto';
+  }
+  .gallery{
+    width:calc(100% - 10%);
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .rectangle-div{
+    width: calc(50% - 20px);
+    margin:0 5px;
+  }
+  .square-div{
+    width: calc(25% - 20px);
+    margin: 0 5px;
+  }
+  .sm-logos{
+    display: flex;
+    width: calc(100% - 50%);
+    justify-content: space-around;
+    margin: 50px auto;
+  }
+}

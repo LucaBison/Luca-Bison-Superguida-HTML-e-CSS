@@ -1,0 +1,257 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* ##################  MYCODE  ###################*/
+*{
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  min-height: 150px;
+  margin: 20px 10px;
+  font-size: 18px;
+  color:#111;
+  background-color: rgba(243, 243, 243, 0.5);
+  font-weight: bolder;
+}
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom:50px;
+  margin-bottom:10px;
+}
+.gallery a{
+  margin: 5px 10px;
+  padding:5px;
+  background-color: #f3f3f3;
+}
+.gallery a:hover{
+  background-color:#737373;
+}
+.gallery img{
+  max-width: 200px;
+  max-height:200px;
+}
+.gallery .one{
+  align-self: center;
+}
+.gallery .two{
+  align-self: flex-end;
+}
+.gallery .three{
+  align-self: flex-start;
+}
+.gallery .four{
+  align-self: flex-end;
+}
+footer{
+  display: flex;
+  width: 60%;
+  height: 100px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto
+}
+footer a{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin:5px;
+  background-color: #f3f3f3;
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+}
+
+@media only screen and (min-width: 427px) and (max-width:768px) {
+  header{
+    width:70%;
+    margin: 20px auto;
+    font-size: 24px;
+  }
+  .gallery{
+    flex-flow: row wrap;
+    padding-bottom: 0;
+  }
+  .gallery img{
+    max-width: 200px;
+    max-height:200px;
+  }
+  .gallery .two{
+    align-self: center;
+  }
+  .gallery .three{
+    align-self: center;
+  }
+  .gallery .four{
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
+  header{
+    width:60%;
+    margin: 20px auto;
+    font-size: 24px;
+  }
+  .gallery{
+    flex-flow: row wrap;
+    padding-bottom: 0;
+  }
+  .gallery img{
+    max-width: 220px;
+    max-height:220px;
+  }
+  .gallery .two{
+    align-self: center;
+  }
+  .gallery .three{
+    align-self: center;
+  }
+  .gallery .four{
+    align-self: center;
+  }
+  footer{
+    flex-direction: row;
+    width: 50%;
+    margin-top:60px;
+  }
+}
+@media only screen and (min-width: 1025px){
+    body {
+      height: 100vh;
+      min-height: 100vh;
+      padding: 0;
+    }
+    header{
+      width:60%;
+      margin: 20px auto;
+      font-size: 24px;
+    }
+    .gallery{
+      flex-flow: row wrap;
+      padding-bottom: 0;
+    }
+    .gallery img{
+      max-width: 250px;
+      max-height:250px;
+    }
+    .gallery .two{
+      align-self: center;
+    }
+    .gallery .three{
+      align-self: center;
+    }
+    .gallery .four{
+      align-self: center;
+    }
+    footer{
+      width: 60%;
+      flex-direction: row;
+      margin-top:100px;
+    }
+    footer a{
+      height: 70px;
+      line-height: 70px;
+      margin:20px;
+      font-size: 18px;
+    }
+  }

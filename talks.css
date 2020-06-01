@@ -1,0 +1,278 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* ##################  MYCODE  ###################*/
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+header{
+  width: 90%;
+  margin: 50px auto 0 auto;
+  padding:30px;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #fff;
+  color:#fff;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-around;
+  margin: 10px auto 20px auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 550;
+  color:#fff;
+}
+.title{
+  text-transform: uppercase;
+  background-color: black;
+  margin: 10px auto;
+}
+.mail, .number{
+  margin: 3px;
+  padding:10px;
+  border: 2px solid #fff;
+  background-color: black;
+}
+.report{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 550;
+}
+form label{
+  max-width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+input{
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+}
+input:focus {
+  border: 1px solid #555;
+}
+
+#textarea{
+  width: 50%;
+  min-width: 200px;
+  min-height: 100px;
+  padding: 3px;
+  margin: 5px;
+  transition: width 0.4s ease-in-out;
+  resize: none;
+}
+#textarea:focus {
+  width: 70%;
+}
+.firstname-label{
+  padding-left: 5px;
+  border-left: 16px solid #44d9e6;
+}
+#firstname{
+  width: 60%;
+  padding: 3px;
+  margin: 5px;
+}
+.surname-label{
+  padding-left: 5px;
+  border-left: 16px solid #fff952;
+}
+#surname{
+  width: 60%;
+  padding: 3px;
+  margin: 5px;
+}
+.mail-label{
+  padding-left: 5px;
+  border-left: 16px solid #ff5c5c;
+}
+#mail{
+  width: 60%;
+  padding: 3px;
+  margin: 5px;
+}
+.report .options{
+  display: flex;
+  align-items: center;
+  padding:3px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: black;
+  border: 1px solid lightgrey;
+}
+.report legend{
+  margin:15px auto;
+  padding-left: 5px;
+  border-left: 16px solid #99e265;
+}
+#country{
+  width: 30%;
+  padding: 1px;
+  margin-top: 15px;
+}
+#submit{
+  width: 20%;
+  padding: 3px;
+  margin-top: 15px;
+  background-color: #ff8b54;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+div{
+  border-radius: 5px;
+  background-color: #fff;
+}
+@media only screen and (min-width: 427px) {
+  header{
+    width: 40%;
+    min-width: 400px;
+    font-size: 28px;
+  }
+  main{
+    width: 40%;
+    min-width: 400px;
+    font-size: 20px;
+  }
+  .mail, .number{
+    min-width: 300px;
+    margin: 5px auto;
+    padding:10px;
+    border: 2px solid #fff;
+    background-color: black;
+    line-height: 24px;
+  }
+  form{
+    font-size: 18px;
+  }
+  form label{
+    max-width: 80%;
+    margin: 15px auto;
+    text-align: center;
+  }
+  input{
+    max-width: 250px;
+  }
+  #textarea{
+    width: 20%;
+    height: 100px;
+  }
+  #textarea:focus {
+    width: 50%;
+  }
+  #country{
+    max-width: 200px;
+  }
+  #submit{
+    max-width: 100px;
+  }
+  .firstname-label{
+    border-left: 17.6px solid #44d9e6;
+  }
+  .surname-label{
+    border-left: 17.6px solid #fff952;
+  }
+  .mail-label{
+    border-left: 17.6px solid #ff5c5c;
+  }
+  .report legend{
+    border-left: 17.6px solid #99e265;
+  }
+}

@@ -1,0 +1,269 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* ##################  MYCODE  ###################*/
+*{
+  box-sizing: border-box;
+}
+body, html {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: row wrap;
+}
+.page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/alice.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover
+}
+
+header{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.box{
+  display: flex;
+  flex-flow: column;
+  width:100%;
+  height:50%;
+  background-color: rgba(1,1,1,0.7);
+  flex-wrap: wrap;
+}
+.box:hover{
+  background-color: rgba(1,1,1,0.8);
+  cursor: hand;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 10px);
+  height: 40%;
+  margin: 0 5px;
+  font-size: 32px;
+  font-family: 'Indie Flower';
+  color:#fff;
+}
+.logo img{
+  width:70px;
+  height:70px;
+}
+.info{
+  width: calc(100% - 10px);
+  height: 60%;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Indie Flower';
+  color:#fff;
+}
+.audio{
+  display: flex;
+  width: 240px;
+  margin-top:5px;
+}
+
+main{
+  display: flex;
+  width:95%;
+  height: 500px;
+  margin: 20px auto;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 900;
+}
+main a{
+  display: flex;
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color:#111;
+  margin-bottom:5px;
+}
+main a:hover{
+  background-color:#737373;
+}
+.guitar{
+   width:100px;
+   height:100px;
+}
+.me{
+  width:100px;
+  height:100px;
+}
+.music{
+  width:100px;
+  height:100px;
+}
+
+@media only screen and (min-width: 581px) and (max-width:949px) {
+  .logo{
+    justify-content: flex-end;
+    font-size: 40px;
+  }
+  .logo img{
+    width:100px;
+    height:100px;
+  }
+  .info{
+    font-size: 26px;
+  }
+  main{
+    height: 250px;
+    flex-direction: row;
+    font-size: 22px;
+  }
+  main a{
+    width:30%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .logo{
+    justify-content: flex-end;
+    font-size: 50px;
+  }
+  .logo img{
+    width:150px;
+    height:150px;
+  }
+  .page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/alice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+  }
+  .info{
+    font-size: 30px;
+  }
+  main{
+    height: 400px;
+    flex-direction: row;
+    font-size: 22px;
+  }
+  main a{
+    width:30%;
+  }
+  .audio{
+    width:100%;
+    margin: 10px auto;
+    justify-content: center;
+  }
+  .column{
+    height: 300px;
+  }
+  .guitar{
+     width:150px;
+     height:150px;
+  }
+  .me{
+    width:150px;
+    height:150px;
+  }
+  .music{
+    width:150px;
+    height:150px;
+  }
+}
